@@ -1,6 +1,23 @@
 :root {
+    --default-font-family: 'Poppins', sans-serif;
+    --heading-font-family: "Playfair Display", serif;
     --primary-color:#6c63ff;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    --secondary-color: #fff;
+}
+
+body {
+    font-family: var(--default-font-famil);
+}
+
+h2 {
+    font-size: 80px;
+    text-align: center;
+    font-family: var(--heading-font-family);
+}
+
+.container-fluid {
+    font-family: var(--heading-font-family);
 }
 
 @media (max-width: 576px) {
@@ -10,8 +27,8 @@
     }
 
     h2 {
-        font-size: 32px;
-        text-align: center;
+        font-size: 44px;
+        font-weight: bold;
     }
 
     p {
@@ -27,17 +44,6 @@
         text-align: center;
         margin: 0 20px;
     }
-}
-
-@media (min-width: 576px) {
-    .d-sm-block {
-        display: block !important;
-    }
-}
-
-h2 {
-    font-size: 40px;
-    text-align: center;
 }
 
 h1 {
@@ -66,7 +72,7 @@ h3 {
     text-transform: capitalize;
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
-    color: white;
+    color: var(--secondary-color);
 }
 
 .secondary-link {
